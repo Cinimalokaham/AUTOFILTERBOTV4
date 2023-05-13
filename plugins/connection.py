@@ -31,7 +31,7 @@ async def addconnection(client, message):
         group_id = message.chat.id
 
     try:
-        st = await client.get_chat_member(group_id, userid)
+        st = await client.get_chat_member(groupid, userid)
         if (
                 st.status != "administrator"
                 and st.status != "creator"
